@@ -18,9 +18,3 @@ resource "dnsimple_zone_record" "bucket-patrickbyrne-net" {
   type      = "CNAME"
   value     = "bucket-patrickbyrne-net.netlify.app"
 }
-
-module "fastmail-dns" {
-  source = "github.com/pbyrne/terraform-fastmail-dnsimple"
-
-  apex = "patrickbyrne.net"
-}
